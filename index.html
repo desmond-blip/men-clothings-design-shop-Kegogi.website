@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Men Clothing Designs</title>
+  <link rel="stylesheet" href="style.css"/>
+  
+</head>
+<body>
+
+  <header>
+    <h1>Men Clothing Designs - Kegogi Town Centre</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="exp.html">Express Shopping</a></li>
+        <li><a href="acc.html">My Account</a></li>
+        <li><a href="cart.html">CART</a></li>
+        <li><a href="cont.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search for products...">
+  </div>
+
+  <section class="shop-now-section">
+  <h2>Style That Speaks. Comfort That Lasts.</h2>
+  <a href="show.html" class="shop-now-btn">Shop Now</a>
+</section>
+
+
+  <section class="products" id="productContainer">
+    <div class="product-card">
+      <img src="shirt.jpg" alt="Shirt 1">
+      <p class="product-name">Classic White Shirt - KSh 1,200</p>
+    </div>
+    <div class="product-card">
+      <img src="jacket.jpg" alt="Jacket 1">
+      <p class="product-name">Casual Denim Jacket - KSh 2,800</p>
+    </div>
+    <div class="product-card">
+      <img src="suit.jpg" alt="Suit 1">
+      <p class="product-name">Formal Suit - KSh 6,500</p>
+    </div>
+    <div class="product-card">
+      <img src="tshirt.jpg" alt="T-Shirt 1">
+      <p class="product-name">Graphic T-Shirt - KSh 900</p>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <h4>Explore</h4>
+      <p>Latest Arrivals</p>
+      <p>Best Sellers</p>
+      <p>Gift Cards</p>
+    </div>
+    <div>
+      <h4>About Us</h4>
+      <p>Men Clothing Designs is your trusted fashion store in Kegogi.</p>
+      <p>Quality. Style. Service.</p>
+    </div>
+    <div>
+      <h4>Newsletter</h4>
+      <p>Subscribe to receive updates and offers.</p>
+      <input type="email" placeholder="mabukadesmond@gmmail.com" style="padding:8px;width:90%;margin-top:5px;">
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/254746268041?text=Hello%2C%20I'm%20interested%20in%20your%20products" 
+     class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp Icon"/>
+  </a>
+
+  <div class="whatsapp-welcome">
+    <p><strong>Welcome</strong><br>
+    Reach our admin on WhatsApp<br>
+    <a href="https://wa.me/254746268041" target="_blank">Chat Now</a></p>
+  </div>
+
+  <!-- JavaScript Search Logic -->
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const productCards = document.querySelectorAll('.product-card');
+
+    searchInput.addEventListener('input', function () {
+      const filter = searchInput.value.toLowerCase();
+      productCards.forEach(card => {
+        const productName = card.querySelector('.product-name').textContent.toLowerCase();
+        if (productName.includes(filter)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

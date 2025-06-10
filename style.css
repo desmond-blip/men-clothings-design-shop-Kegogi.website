@@ -1,0 +1,158 @@
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('img.jpg'); /* Replace with your actual image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      color: #fff;
+    }
+
+    header {
+      background-color: #4B2E2E; /* Dark brown */
+      color: gold;
+      padding: 15px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      color: yellow;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .search-bar input {
+      width: 60%;
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid gold;
+      border-radius: 5px;
+    }
+
+.shop-now-section {
+      text-align: center;
+      color: #4B2E2E; /* Brown text */
+      padding: 40px 20px;
+    }
+
+    .shop-now-section h2 {
+  font-size: 32px;
+  color: whitesmoke;
+  font-weight: 900;
+  text-shadow: 1px 1px 2px #d4af37; /* Subtle gold shadow */
+  margin-bottom: 20px;
+}
+
+
+    .shop-now-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: gold;
+  color: #4B2E2E;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+  background-color: #e6c200;
+}
+
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .product-card {
+      width: 100px;
+      border: 2px solid goldenrod;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      background-color:lightgoldenrodyellow; /* Light gold/cream */
+      color: #4B2E2E;
+    }
+
+    .product-card img {
+      width: 50%;
+      height: auto;
+    }
+
+    .product-card p {
+      margin: 10px;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #4B2E2E;
+      color: gold;
+      padding: 30px 20px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    footer div {
+      margin: 10px 0;
+    }
+
+    footer h4 {
+      color: yellow;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 20px;
+      z-index: 100;
+    }
+
+    .whatsapp-welcome {
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      background-color: #d4af37; /* Gold shade */
+      color: #4B2E2E;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 14px;
+      max-width: 250px;
+      z-index: 99;
+    }
+
+    .whatsapp-welcome a {
+      color: #4B2E2E;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  
